@@ -1,0 +1,19 @@
+image: node:latest
+
+stages:
+    - build
+
+before_script:
+    - apt-get update
+    - apt-get install zip
+
+build:
+    stage: build
+    script:
+        - zip pdftofoundry.zip -r pdftofoundry
+        - mkdir static_module
+        - cp pdftofoundry/module.json static_module
+    artifacts:
+        paths:
+            - pdftofoundry.zip
+            - static_module/module.json
