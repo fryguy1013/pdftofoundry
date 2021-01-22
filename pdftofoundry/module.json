@@ -2,7 +2,7 @@
     "name": "pdftofoundry",
     "title": "PDF to Foundry Importer",
     "description": "",
-    "version": "1.5.1",
+    "version": "1.6.0",
     "author": "fryguy",
     "scripts": [],
     "esmodules": [
@@ -12,7 +12,7 @@
     "packs": [],
     "languages": [],
     "minimumCoreVersion": "0.7.5",
-    "compatibleCoreVersion": "0.7.8",
+    "compatibleCoreVersion": "0.7.9",
     "socket": true,
     "url": "https://gitlab.com/fryguy1013/pdftofoundry",
     "manifest": "https://gitlab.com/fryguy1013/pdftofoundry/-/jobs/artifacts/release/raw/static_module/module.json?job=build",
