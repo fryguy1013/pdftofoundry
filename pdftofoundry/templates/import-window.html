@@ -1,7 +1,9 @@
 <form autocomplete="off" onsubmit="event.preventDefault();">
     <p>You may import unmodified PDFs from Paizo only. For personal use only.</p>
     <p>This will create actors/scenes/journal entries in this world. Importing supported flip mats/interactive maps (+) will update maps for all matching scenes in the world.</p>
-    <h4>Supported Modules</h4>
+    <hr>
+
+    <h4>Supported Aventures</h4>
 
     <div class="supported-modules-container">
         <div>
@@ -14,7 +16,7 @@
                 <p>The Slithering</p>
             </div>
             <div class="supported-modules">
-                <span class="complete" title="Flip Mat import supported.">+</span>
+                <span class="complete" title="Flip Mat import supported."><i class="fas fa-star"></i></span>
                 <p>Troubles in Otari</p>
             </div>
             <div class="supported-modules">
@@ -22,8 +24,12 @@
                 <p>Menace Under Otari</p>
             </div>
             <div class="supported-modules">
-                <span class="complete" title="Special thanks to TMun for providing wall data.">&nbsp;</span>
+                <span class="complete" title="Special thanks to TMun for providing wall data."><i class="fas fa-star"></i></span>
                 <p>Malevolence</p>
+            </div>
+            <div class="supported-modules">
+                <span class="complete" title="Flip Mat import supported."><i class="fas fa-star"></i></span>
+                <p>Night of the Gray Death</p>
             </div>
             <div class="supported-modules">
                 <span class="complete">&nbsp;</span>
@@ -36,6 +42,10 @@
             <div class="supported-modules">
                 <span class="complete">&nbsp;</span>
                 <p>Dinner at Lionlodge</p>
+            </div>
+            <div class="supported-modules">
+                <span class="complete"><i class="fas fa-star"></i></span>
+                <p>Head-Shot the Rot</p>
             </div>
             <p>Age of Ashes</p>
             <div class="supported-modules">
@@ -78,10 +88,10 @@
             </div>
             <p>Strength of Thousands</p>
             <div class="supported-modules">
-                <span class="complete" title="Interactive Map import supported.">1+</span>
-                <span class="complete" title="Interactive Map import supported.">2+</span>
-                <span class="" title="">3</span>
-                <span class="" title="">4</span>
+                <span class="complete" title="Interactive Map import supported.">1<i class="fas fa-star"></i></span>
+                <span class="complete" title="Interactive Map import supported.">2<i class="fas fa-star"></i></span>
+                <span class="complete" title="Interactive Map import supported. Special thanks to InfamousSky#9002 for providing wall data.">3<i class="fas fa-star"></i></span>
+                <span class="complete" title="Interactive Map import supported. Special thanks to InfamousSky#9002 for providing wall data.">4<i class="fas fa-star"></i></span>
                 <span class="" title="">5</span>
                 <span class="" title="">6</span>
             </div>
@@ -161,6 +171,8 @@
             <p>Pathfinder Society Season 3</p>
             <div class="supported-modules">
                 <span class="complete">01</span>
+                <span class="complete">02</span>
+                <span class="complete">03</span>
             </div>
             <p>Pathfinder Society Intros</p>
             <div class="supported-modules">
@@ -179,6 +191,10 @@
                 <span class="complete">08</span>
                 <span class="complete">09</span>
                 <span class="complete">10</span>
+                <span class="complete">11</span>
+                <span class="complete">12</span>
+                <span class="complete">13</span>
+                <span class="complete">14</span>
             </div>
         </div>
     </div>
@@ -196,5 +212,10 @@
     <div class="form-group">
         <label for="data">Source PDF</label>
         <input type="file" name="data">
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" name="consent" id="consent" checked>
+        <label for="consent">I consent to send telemetry data about the usage of this module</label>
     </div>
 </form>
