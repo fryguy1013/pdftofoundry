@@ -2,7 +2,7 @@
     "name": "pdftofoundry",
     "title": "PDF to Foundry Importer",
     "description": "",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "author": "fryguy",
     "scripts": [],
     "esmodules": [
@@ -12,7 +12,7 @@
     "packs": [],
     "languages": [],
     "minimumCoreVersion": "9.238",
-    "compatibleCoreVersion": "9.238",
+    "compatibleCoreVersion": "9.245",
     "system": ["pf2e"],
     "socket": true,
     "url": "https://gitlab.com/fryguy1013/pdftofoundry",
