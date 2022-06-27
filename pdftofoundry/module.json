@@ -2,7 +2,7 @@
     "name": "pdftofoundry",
     "title": "PDF to Foundry Importer",
     "description": "",
-    "version": "3.3.1",
+    "version": "3.3.2",
     "author": "fryguy",
     "scripts": [],
     "esmodules": [
