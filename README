@@ -1,13 +1,13 @@
-This is a quick and dirty script that lets you take pdfs that contain certain
-adventures, and export them to a format that is compatible with Foundry Virtual
-Tabletop for the Pathfinder 2nd edition system.
+This is module that lets you take pdfs that contain certain adventures (listed in the application),
+and export them to a format that is compatible with Foundry Virtual Tabletop for the Pathfinder
+2nd edition system.
 
 To use, follow the following steps:
 
 * Download the module into your FoundryVTT instance on the setup page under modules. Either find It
   in the list of modules or paste in the following url as the manifest json:
 
-  https://gitlab.com/fryguy1013/pdftofoundry/-/jobs/artifacts/master/raw/static_module/module.json?job=build
+  https://github.com/fryguy1013/pdftofoundry/releases/latest/download/module.json
 
 * In your world, go to the settings tab, under module settings find the PDF to
   Foundry module and enable it by clicking the checkbox.
