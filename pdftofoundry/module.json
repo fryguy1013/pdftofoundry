@@ -39,7 +39,9 @@
     "packs": [],
     "languages": [],
     "socket": true,
-    "url": "https://gitlab.com/fryguy1013/pdftofoundry",
-    "manifest": "https://gitlab.com/fryguy1013/pdftofoundry/-/jobs/artifacts/release/raw/static_module/module.json?job=build",
-    "download": "https://gitlab.com/fryguy1013/pdftofoundry/-/jobs/artifacts/release/raw/pdftofoundry.zip?job=build"
-  }
+    "url": "https://github.com/fryguy1013/pdftofoundry/",
+    "bugs": "https://github.com/fryguy1013/pdftofoundry/issues",
+    "changelog": "https://github.com/fryguy1013/pdftofoundry/blob/release/CHANGELOG.md",
+    "manifest": "https://github.com/fryguy1013/pdftofoundry/releases/latest/download/module.json",
+    "download": "https://github.com/fryguy1013/pdftofoundry/releases/latest/download/pdftofoundry.zip"
+}

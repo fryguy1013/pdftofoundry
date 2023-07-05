@@ -1,0 +1,33 @@
+name: PDFToFoundry CD
+
+on:
+  push:
+    branches: [release]
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update Manifest
+        run: |
+          SYSTEM_VERSION=$(grep -oP '(?<="version": ")[^"]+' pdftofoundry/module.json | tr -d '\n')
+          echo "systemVersion=$SYSTEM_VERSION" >> $GITHUB_ENV
+
+      - name: Zip Files
+        run: zip pdftofoundry.zip -r pdftofoundry
+
+      - name: Create Version Release
+        id: create_version_release
+        uses: ncipollo/release-action@v1
+        with:
+          name: ${{ env.systemVersion }}
+          allowUpdates: false
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: "./pdftofoundry/module.json,./pdftofoundry.zip"
+          tag: ${{ env.systemVersion }}
