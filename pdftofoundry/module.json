@@ -2,7 +2,7 @@
     "id": "pdftofoundry",
     "title": "PDF to Foundry Importer",
     "description": "",
-    "version": "4.1.0",
+    "version": "4.1.1",
     "authors": [
         {
             "name": "fryguy",
@@ -11,7 +11,8 @@
     ],
     "scripts": [],
     "esmodules": [
-        "main.bundle.js"
+        "pdftofoundry.mjs",
+        "vendor.mjs"
     ],
     "flags": {
         "pdftofoundry": {
@@ -20,8 +21,7 @@
     },
     "compatibility": {
         "minimum": "11",
-        "verified": "11.304",
-        "maximum": 11
+        "verified": "11.306"
     },
     "relationships": {
         "systems": [
@@ -35,7 +35,7 @@
             }
         ]
     },
-    "styles": ["./css/style.css"],
+    "styles": ["pdftofoundry.css"],
     "packs": [],
     "languages": [],
     "socket": true,

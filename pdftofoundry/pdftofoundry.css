@@ -1,0 +1,101 @@
+.pdf-importer {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdfJson {
+  flex-grow: 1;
+  margin-bottom: 1em;
+}
+
+#pdftofoundry-importdialog nav {
+  border: 1px solid #d1b431;
+  background: #171f69;
+  flex: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px;
+}
+#pdftofoundry-importdialog nav > a {
+  color: #ffefbd;
+  padding: 4px 0;
+  font-size: 12px;
+  position: relative;
+}
+#pdftofoundry-importdialog nav > a.active::after {
+  bottom: -2px;
+  right: 39%;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #ffefbd;
+}
+
+.pdftofoundry-content {
+  height: 26rem;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.supported-modules {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.supported-modules > span {
+  display: block;
+  width: 2.5em;
+  border: 1px solid #000;
+  text-align: center;
+  margin: 2px;
+  background: #999;
+}
+
+.supported-modules > span.complete {
+  background: #9f9;
+}
+
+.supported-modules > span.partial {
+  background: #ff9;
+}
+
+.supported-modules > span > i {
+  font-size: 10px;
+  line-height: 14px;
+  color: #cc0;
+}
+
+p {
+  margin: 0.25em 0 0 0;
+}
+
+.supported-modules > p {
+  text-align: left;
+}
+
+.specialthanks {
+  display: flex;
+}
+.specialthanks span {
+  flex: 260px;
+}
+.specialthanks .patreon {
+  margin: 5px;
+  border: 0;
+  background: #FF424D;
+}
+.specialthanks p {
+  flex: 1 1 auto;
+  margin-left: 1em;
+}
+
+p.superpatrons {
+  text-align: center;
+  margin-top: 0;
+}
