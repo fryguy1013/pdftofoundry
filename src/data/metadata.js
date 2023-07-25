@@ -1,8 +1,8 @@
 module.exports = {
-	title: "pdf to foundry",
+	title: "PDF To Foundry",
 	url: "https://fryguy1013.github.io/pdftofoundry/",
 	language: "en",
-	description: "Kevin Hjelden's personal blog",
+	description: "Web Page for PDF to Foundry",
 	author: {
 		name: "Kevin Hjelden",
 		email: "fryguy@burntpopcorn.net",
