@@ -1,0 +1,14 @@
+{% for post in postslist | reverse %}
+    <article>
+        <h2 class="article-title">{{ post.data.title }}</h1>
+        <div class="article-meta">
+            <a href="{{ post.url }}" class="permalink" itemprop="name"><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL dd, yyyy hh:mm a") }}</time></a>
+        </div>
+
+        {{ post.content | preamble | safe }}
+
+        {%- if post.data.hasPreamble %}
+            <a href="{{ post.url }}" class="read-more">Read more...</a>
+        {% endif %}
+    </article>
+{% endfor %}

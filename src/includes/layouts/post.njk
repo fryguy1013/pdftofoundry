@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+---
+{# Only include the syntax highlighter CSS on blog posts #}
+
+<article id="{{ page.id }}" class="article" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <h2 class="article-title">{{ title }}</h1>
+
+    <div class="article-meta">
+        <a href="{{ post.url }}" class="permalink" itemprop="name"><time class="postlist-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate("LLLL dd, yyyy hh:mm a") }}</time></a>
+    </div>
+
+    {{ content | safe }}
+
+</article>
+
+<p>{{ collections.posts | length }} posts can be found in <a href="/blog/">the archive</a>.</p>

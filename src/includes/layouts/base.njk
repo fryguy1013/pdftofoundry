@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title or metadata.title }}</title>
+        <meta name="description" content="{{ description or metadata.description }}">
+
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <meta name="theme-color" content="#529CFF" />
+        <meta name="viewport" content="width=device-width">
+
+        {#- Atom and JSON feeds included by default #}
+        <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+        <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+
+        {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
+        {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+
+        {#-
+        CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
+        1. You can add to them using `{% css %}`
+        2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+        3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
+        4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+        #}
+
+        {%- css %}
+            {% renderFile "src/public/css/index.scss", template="scss" %}
+        {% endcss %}
+
+        {# {%- css %}{% include "node_modules/@fortawesome/fontawesome-free/css/all.css" %}{% endcss %} #}
+
+        {#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+        <style>{% getBundle "css" %}</style>
+        {#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
+        <link rel="stylesheet" href="/css/all.min.css">
+    </head>
+    <body>
+        <div id="container">
+
+            <header>
+                <h1>PDF To Foundry</h1>
+                <p>
+                    A project for importing PDF content from Paizo for Pathfinder 2E into the Foundry Virtual Tabletop system
+                </p>
+
+                <div class="nav">
+                    <a class="nav-icon" href="/" title="Home"><span class="fa fa-house"></span>Home</a>
+                    <a class="nav-icon" href="https://github.com/fryguy1013/pdftofoundry" title="Github page"><span class="fa-brands fa-github"></span> View on Github</a>
+                    <a class="nav-icon" href="https://foundryvtt.com/packages/pdftofoundry" title="FoundryVTT Package"><span class="fa fa-dice-d20"></span> View on FoundryVTT</a>
+                </div>
+
+            </header>
+
+            <main id="skip">
+                {{ content | safe }}
+            </main>
+
+            <footer id="footer">
+                <p>
+                    &copy; {% currentYear %} Kevin Hjelden. All Rights Reserved.<br>
+                    <a href="/feed/feed.xml" rel="nofollow">Entries (RSS)</a>
+                </p>
+            </footer>
+        </div>
+
+        <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+    </body>
+</html>
