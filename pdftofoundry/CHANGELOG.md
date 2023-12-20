@@ -1,3 +1,9 @@
+## 4.1.2
+- Fix token art database not working in 4.1.1.
+- Work around issue when other installed modules break the array prototype by adding methods to it
+- Fix issue with actors in PFS 2-04
+- Major refactor of code, including automated tests in FVTT (using playwright)
+
 ## 4.1.1
 
 - Bugfix for tokens that are auto-matically placed not being editable (regression in FVTT v11)

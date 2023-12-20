@@ -2,7 +2,7 @@
     "id": "pdftofoundry",
     "title": "PDF to Foundry Importer",
     "description": "",
-    "version": "4.1.1",
+    "version": "4.1.2",
     "authors": [
         {
             "name": "fryguy",
@@ -21,7 +21,7 @@
     },
     "compatibility": {
         "minimum": "11",
-        "verified": "11.306"
+        "verified": "11.315"
     },
     "relationships": {
         "systems": [
@@ -30,7 +30,7 @@
                 "type": "system",
                 "compatibility": {
                     "minimum": "5.1.0",
-                    "verified": "5.1.0"
+                    "verified": "5.10.3"
                 }
             }
         ]
