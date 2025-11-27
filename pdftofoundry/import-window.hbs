@@ -1,24 +1,20 @@
 <form autocomplete="off" onsubmit="event.preventDefault();">
-    <nav data-group="primary">
-        <a data-tab="summary">Summary</a>
-        <a data-tab="ap">AP</a>
-        <a data-tab="standalone">Standalone</a>
-        <a data-tab="pfs">PFS</a>
-        <a data-tab="bounty">Bounty</a>
-        <a data-tab="bestiary">Bestiary</a>
+    <nav class="tabs" data-group="primary-tabs">
+        <a class="item" data-group="primary-tabs" data-tab="summary">Summary</a>
+        <a class="item" data-group="primary-tabs" data-tab="ap">AP</a>
+        <a class="item" data-group="primary-tabs" data-tab="standalone">Standalone</a>
+        <a class="item" data-group="primary-tabs" data-tab="pfs">PFS</a>
+        <a class="item" data-group="primary-tabs" data-tab="bounty">Bounty</a>
+        <a class="item" data-group="primary-tabs" data-tab="bestiary">Bestiary</a>
     </nav>
-
-    <hr>
 
     <section class="pdftofoundry-content">
 
-        <div class="tab browser" data-group="primary" data-tab="summary">
+        <div class="tab" data-group="primary-tabs" data-tab="summary">
 
             <p>You may import unmodified PDFs from Paizo only. For personal use only.</p>
             <p>This will create actors/scenes/journal entries in this world. Importing flip mats/interactive maps will update maps for all matching scenes in the world.</p>
-            <p>Tokens will be placed in worlds for supported modules (indicated with a star). This is an early access feature and may not work in all cases.</p>
-
-            <hr>
+            <p>Tokens will be placed in worlds for supported modules (indicated with a star).</p>
 
             <h4>Supported Adventures</h4>
 
@@ -31,8 +27,6 @@
             </ul>
 
             <p>For more information about specific adventures, select a tab above</p>
-
-            <hr>
 
             <div class="specialthanks">
                 <span><img src="/modules/pdftofoundry/Digital-Patreon-Wordmark_White.png" class="patreon"/></span>
@@ -61,7 +55,7 @@
             </p>
         </div>
 
-        <div class="tab browser" data-group="primary" data-tab="standalone">
+        <div class="tab" data-group="primary-tabs" data-tab="standalone">
             <div class="supported-modules-container">
                 <p>Adventures</p>
                 <div class="supported-modules">
@@ -117,13 +111,13 @@
             </div>
         </div>
 
-        <div class="tab browser" data-group="primary" data-tab="bestiary">
+        <div class="tab browser" data-group="primary-tabs" data-tab="bestiary">
             <div class="supported-modules-container">
                 <p>
                     Importing bestiary PDFs will save the token art information to your foundry data folder across all worlds
                     and PDF to Foundry will use this art when importing other adventures to use as token data. Additionally,
                     the token art will be used when importing compendium monsters into your world. <b>NOTE: The creature art
-                    will <u>NOT</u> show in the compendium browser!</b>
+                    will <u>NOT</u> show in the compendium browser until reload!</b>
                 </p>
                 <div class="supported-modules">
                     <span class="complete">&nbsp;</span>
@@ -144,7 +138,7 @@
             </div>
         </div>
 
-        <div class="tab browser" data-group="primary" data-tab="pfs">
+        <div class="tab browser" data-group="primary-tabs" data-tab="pfs">
             <div class="supported-modules-container">
                 <p>Pathfinder Society Season 1</p>
                 <div class="supported-modules">
@@ -223,16 +217,22 @@
                     <span class="complete">01</span>
                     <span class="complete">02</span>
                     <span class="complete">03</span>
-                    <span class="complete">04<i class="fas fa-star"></i></span>
-                    <span class="complete">05<i class="fas fa-star"></i></span>
-                    <span class="complete">06<i class="fas fa-star"></i></span>
-                    <span class="complete">07<i class="fas fa-star"></i></span>
-                    <span class="complete">08<i class="fas fa-star"></i></span>
-                    <span class="complete">09<i class="fas fa-star"></i></span>
-                    <span class="complete">10<i class="fas fa-star"></i></span>
-                    <span class="complete">11<i class="fas fa-star"></i></span>
-                    <span class="complete">12<i class="fas fa-star"></i></span>
-                    <span class="complete">13<i class="fas fa-star"></i></span>
+                    <span class="complete">04<i class="fa fa-star"></i></span>
+                    <span class="complete">05<i class="fa fa-star"></i></span>
+                    <span class="complete">06<i class="fa fa-star"></i></span>
+                    <span class="complete">07<i class="fa fa-star"></i></span>
+                    <span class="complete">08<i class="fa fa-star"></i></span>
+                    <span class="complete">09<i class="fa fa-star"></i></span>
+                    <span class="complete">10<i class="fa fa-star"></i></span>
+                    <span class="complete">11<i class="fa fa-star"></i></span>
+                    <span class="complete">12<i class="fa fa-star"></i></span>
+                    <span class="complete">13<i class="fa fa-star"></i></span>
+                    <span class="complete">14</span>
+                    <span class="complete">15</span>
+                    <span class="complete">16</span>
+                    <span class="complete">17</span>
+                    <span class="complete">18</span>
+                    <span class="complete">19</span>
                 </div>
                 <p>Pathfinder Society Intros</p>
                 <div class="supported-modules">
@@ -242,7 +242,7 @@
             </div>
         </div>
 
-        <div class="tab browser" data-group="primary" data-tab="bounty">
+        <div class="tab browser" data-group="primary-tabs" data-tab="bounty">
             <div class="supported-modules-container">
                 <div class="supported-modules">
                     <span class="complete">01</span>
@@ -319,7 +319,7 @@
             </div>
         </div>
 
-        <div class="tab browser" data-group="primary" data-tab="ap">
+        <div class="tab browser" data-group="primary-tabs" data-tab="ap">
             <div class="supported-modules-container">
                 <p>Age of Ashes</p>
                 <div class="supported-modules">

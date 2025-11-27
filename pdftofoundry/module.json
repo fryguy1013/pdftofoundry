@@ -2,7 +2,7 @@
     "id": "pdftofoundry",
     "title": "PDF to Foundry Importer",
     "description": "",
-    "version": "5.0.0",
+    "version": "5.1.0",
     "authors": [
         {
             "name": "fryguy",
@@ -22,9 +22,9 @@
         }
     },
     "compatibility": {
-        "minimum": "12",
-        "verified": "12.330",
-        "maximum": "12"
+        "minimum": "13",
+        "verified": "13.351",
+        "maximum": "13"
     },
     "relationships": {
         "systems": [
@@ -32,13 +32,15 @@
                 "id": "pf2e",
                 "type": "system",
                 "compatibility": {
-                    "minimum": "6.2.1",
-                    "verified": "6.2.1"
+                    "minimum": "7.7.4",
+                    "verified": "7.7.4"
                 }
             }
         ]
     },
-    "styles": ["pdftofoundry.css"],
+    "styles": [
+        "pdftofoundry.css"
+    ],
     "packs": [],
     "languages": [],
     "socket": true,

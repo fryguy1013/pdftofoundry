@@ -19,6 +19,9 @@
   align-items: center;
   padding: 4px;
 }
+#pdftofoundry-importdialog div.active {
+  display: block;
+}
 #pdftofoundry-importdialog nav > a {
   color: #ffefbd;
   padding: 4px 0;
@@ -42,6 +45,9 @@
   overflow-y: scroll;
   display: flex;
 }
+.pdftofoundry-content div.active {
+  display: block;
+}
 
 .supported-modules {
   display: flex;
@@ -59,16 +65,18 @@
 
 .supported-modules > span.complete {
   background: #9f9;
+  color: #000;
 }
 
 .supported-modules > span.partial {
   background: #ff9;
+  color: #000;
 }
 
 .supported-modules > span > i {
   font-size: 10px;
   line-height: 14px;
-  color: #cc0;
+  color: rgb(99, 99, 0);
 }
 
 p {

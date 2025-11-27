@@ -1,1 +1,1 @@
-import"./FoundryGui.mjs";import"./vendor.mjs";
+import"./FoundryGui.mjs";
